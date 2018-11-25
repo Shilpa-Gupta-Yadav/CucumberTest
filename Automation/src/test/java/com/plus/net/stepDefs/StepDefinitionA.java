@@ -33,7 +33,7 @@ public class StepDefinitionA {
 
     	driver.manage().window().maximize();
 
-	System.out.println("TestCase1: Driver Launched");
+	System.out.println("TestCase1: HTML Unit Driver Launched");
 
     	Log.info("Test Completed");
     }
