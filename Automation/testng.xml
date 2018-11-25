@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Plusnet Automation Suite">
+
+  <test name="TC007">
+    <classes>
+      <class name="com.plus.net.runner.TestRunner"/>
+    </classes>
+  </test> <!-- TC007 -->
+</suite> <!-- Plusnet Automation Suite -->
