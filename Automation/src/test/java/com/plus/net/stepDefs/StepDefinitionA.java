@@ -29,7 +29,7 @@ public class StepDefinitionA {
 
     	driver.manage().window().maximize();
 
-
+	System.out.println("TestCase1: Driver Launched");
 
     	Log.info("Test Completed");
     }
@@ -39,43 +39,45 @@ public class StepDefinitionA {
 	System.setProperty("webdriver.chrome.driver", "C:\\Automation Setup\\NewSetup\\chromedriver_win32\\chromedriver.exe");
     	WebDriver driver=new ChromeDriver();
     	driver.get("http://www.google.com");
-
+	System.out.println("TestCase2: Driver Launched");
     	System.out.println("TestCase2:  StepDefinitionA.i_complete_action()");
         
     }
 
     @When("^I check for the (.+) in step$")
     public void i_check_for_the_in_step(String value) throws Throwable {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Automation Setup\\NewSetup\\chromedriver_win32\\chromedriver.exe");
+    	WebDriver driver=new ChromeDriver();
+    	driver.get("http://www.google.com");
+	System.out.println("TestCase3: Driver Launched");
     	System.out.println("TestCase3: StepDefinitionA.i_check_for_the_in_step()");
     }
 
     @Then("^I validate the outcomes$")
     public void i_validate_the_outcomes() throws Throwable {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Automation Setup\\NewSetup\\chromedriver_win32\\chromedriver.exe");
+    	WebDriver driver=new ChromeDriver();
+    	driver.get("http://www.google.com");
+	System.out.println("TestCase4: Driver Launched");
     	System.out.println("TestCase4: StepDefinitionA.i_validate_the_outcomes()");
     }
 
     @Then("^I verify the (.+) in step$")
     public void i_verify_the_in_step(String status) throws Throwable {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Automation Setup\\NewSetup\\chromedriver_win32\\chromedriver.exe");
+    	WebDriver driver=new ChromeDriver();
+    	driver.get("http://www.google.com");
+	System.out.println("TestCase5: Driver Launched");
     	System.out.println("TestCase5: StepDefinitionA.i_verify_the_in_step()");
     }
 
     @And("^some other precondition$")
     public void some_other_precondition() throws Throwable {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Automation Setup\\NewSetup\\chromedriver_win32\\chromedriver.exe");
+    	WebDriver driver=new ChromeDriver();
+    	driver.get("http://www.google.com");
+	System.out.println("TestCase6: Driver Launched");
     	System.out.println("TestCase6: StepDefinitionA.some_other_precondition()");
-    }
-
-    @And("^some other action$")
-    public void some_other_action() throws Throwable {
-        
-    }
-
-    @And("^yet another action$")
-    public void yet_another_action() throws Throwable {
-    }
-
-    @And("^check more outcomes$")
-    public void check_more_outcomes() throws Throwable {
-
     }
 
 }
