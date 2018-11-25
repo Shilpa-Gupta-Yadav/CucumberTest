@@ -21,7 +21,7 @@ public class StepDefinitionA {
     @Given("^I want to write a step with precondition$")
     public void i_want_to_write_a_step_with_precondition() throws Throwable {
     	System.out.println("TestCase1: StepDefinitionA.i_want_to_write_a_step_with_precondition()");
-    	System.setProperty("webdriver.chrome.driver", "C:\\Automation Setup\\NewSetup\\chromedriver_win32\\chromedriver.exe");
+    //	System.setProperty("webdriver.chrome.driver", "C:\\Automation Setup\\NewSetup\\chromedriver_win32\\chromedriver.exe");
     	WebDriver driver=new ChromeDriver();
     	driver.get("http://www.google.com");
 
